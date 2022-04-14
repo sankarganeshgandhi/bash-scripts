@@ -12,12 +12,12 @@ CLUSTER_NAME=$1
 NAMESPACE_FLAG=$2
 NAMESPACE=$3
 
-if [ "$CLUSTER_NAME" = "applegreen" ]; then
-  CONFIG_FILE=~/.kube/applegreen-cluster.yaml
-elif [ "$CLUSTER_NAME" = "infradev" ]; then
-  CONFIG_FILE=~/.kube/dcs-infra-dev-cluster.yaml
-elif [ "$CLUSTER_NAME" = "multidev" ]; then
-  CONFIG_FILE=~/.kube/multidev-cluster.yaml
+if [ "$CLUSTER_NAME" = "dev-cluster" ]; then
+  CONFIG_FILE=~/.kube/dev-cluster.yaml
+elif [ "$CLUSTER_NAME" = "dev-test-cluster" ]; then
+  CONFIG_FILE=~/.kube/dev-test-cluster.yaml
+elif [ "$CLUSTER_NAME" = "dev-intg-cluster" ]; then
+  CONFIG_FILE=~/.kube/dev-intg-cluster.yaml
 elif [ "$CLUSTER_NAME" = "local" ]; then
   CONFIG_FILE=~/.kube/config
 fi
